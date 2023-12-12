@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Zoo Reads</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Zoo Reads</h1>
+    <div class="grid-container">
+        <div class="one">
+            <div id=" book-review">
+                <h2>Leave a Book Review</h2>
+                <form method="post" action="https://www.toptal.com/developers/postbin/1702370030148-5763633302412">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input name="name" id="name" type="name" />
+                    </div>
+                    <div>
+                        <label for="e-mail">E-mail:</label>
+                        <input name="e-mail" id="e-mail" type="e-mail" />
+                    </div>
+                    <div>
+                        <label for="reviewer">I am a</label>
+                        <select name="reviewer" id="reviewer">
+                            <option>Person</option>
+                            <option>Robot</option>
+                            <option>Animal</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="score">Score:</label>
+                        <input name="score" id="score" type="number" />
+                    </div>
+                    <div>
+                        <label for="review-text">Review:</label>
+                        <input name="review-text" id="review-text" type="text" />
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div><!--end book-review-->
+        </div><!-- end one-->
+
+        <div class="two">
+            <div id="reading-animals">
+                <h2>Reviewer Reviews</h2>
+                <em>The reading scores of our top animal reviewers.</em>
+                <table>
+                    <tr>
+                        <th>
+                            Animal
+                        </th>
+                        <th>
+                            Eye Positioning
+                        </th>
+                        <th>
+                            Opposable Thumbs
+                        </th>
+                        <th>
+                            Reading Score
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Horse
+                        </td>
+                        <td>
+                            Sides
+                        </td>
+                        <td>
+                            None
+                        </td>
+                        <td>
+                            Poor
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Raccoon
+                        </td>
+                        <td>
+                            Front
+                        </td>
+                        <td>
+                            Yes
+                        </td>
+                        <td>
+                            Excellent
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Orangutan
+                        </td>
+                        <td>
+                            Ook
+                        </td>
+                        <td>
+                            Too many
+                        </td>
+                        <td>
+                            Ook
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Cheetah
+                        </td>
+                        <td>
+                            OK
+                        </td>
+                        <td>
+                            Too few
+                        </td>
+                        <td>
+                            Fast
+                        </td>
+                    </tr>
+                </table>
+            </div><!--end reading-animals-->
+        </div><!--end two-->
+
+            <div class="three">
+                <h2>Zoo Reads Profile</h2>
+                <figure>
+                    <img
+                        src="https://cdn.discordapp.com/attachments/1108108671306698853/1130477417346121738/20230717_143241.jpg?ex=658976a3&is=657701a3&hm=2b21f7848ce6788a8f172ce910b2e3714d23183ea5c52eda2831b7e82d520bf2&" />
+                    <figcaption>
+                        A fab girl
+                    </figcaption>
+                </figure>
+            </div><!--three-->
+            <div class="four">
+                <div id="bio">
+                    <h2>Iris</h2>
+                    <h3>Bio</h3>
+                    <p>
+                        Help am cat how read? Cold diva with snack skills. Brush = bliss. Scared of loud, fast stuff
+                        (shh,
+                        secret). Drama? Pro! Royalty vibes, but also quirky. Join my purrfect chaos! #IrisDoll
+                    </p>
+                    <p>I like to...</p>
+                    <ul>
+                        <li>Eat snackies</li>
+                        <li>Get brushies</li>
+                        <li>Scream</li>
+                        <li>Not read</li>
+                    </ul>
+                    <div class="rate-profile">
+                        <p><em>Rate this profile</em></p>
+                        <button class="button" onclick="incrementCounter('good')">Good</button>
+                        <button class="button" onclick="incrementCounter('bad')">Bad</button>
+                        <label>Total: <span id="counter">0</span></label>
+
+                        <script>
+                            // Initialize the counter
+                            let count = 0;
+
+                            // Function to increment the counter
+                            function incrementCounter(type) {
+                                if (type === 'good') {
+                                    count++;
+                                } else if (type === 'bad') {
+                                    count--;
+                                }
+
+                                // Update the counter display
+                                document.getElementById('counter').textContent = count;
+                            }
+                        </script>
+                </div><!--end bio-->
+            </div><!---end four-->
+        </div> <!--end profile-->
+
+        <div class="quiz">
+            <h2>Quick Quiz</h2>
+            <p>What do you like to do?</p>
+            <form method="post" action="https://www.toptal.com/developers/postbin/1702370030148-5763633302412">
+                <fieldset>
+                    <div>
+                        <label for="radio-read">Read</label>
+                        <input name="radio-quiz" id="radio-read" type="radio" value="read" />
+                        <label for="radio-snack">Snack</label>
+                        <input name="radio-quiz" id="radio-snack" type="radio" value="snack" />
+                        <label for="radio-scream">Scream</label>
+                        <input name="radio-quiz" id="radio-scream" type="radio" value="scream" />
+                </fieldset>
+        <div>
+            <label for="comment">Comment</label>
+            <input name="comment" id="comment" type="text" />
+        </div><!--end comment-->
+
+        <button type="submit">Submit</button>
+        </form>
+    </div>
+    </div>
+    </div>
+</body>
+<footer>
+    <a href="#" class="button" role="button">To Top</a>
+</footer>
+
+</html>
